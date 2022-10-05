@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.btn-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 150px;
+    background-color: #5A9CFF;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+.btn-bkg {
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+}
+
+.btn-bkg p {
+    align-items: center;
+    justify-content: center;
+}

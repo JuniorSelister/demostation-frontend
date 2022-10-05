@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  display: inline;
+  margin-left: 40px;
+}
+
+header li a:hover {
+  color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+}
+
+.demo_logo {
+    width: 80px;
+    height: 80px;
+}
+
+footer { 
+    display: flex;
+    justify-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .home-presentation, .cards-presentation, .contact-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .img-here {
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+  }
+
+  .cards-presentation h2 {
+    font-size: 50px;
+    justify-content: none;
+  }
+
+  .display-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-text h1 {
+    font-size: 50px;
+  }
+
+  .text-presentation h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .text-presentation h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .contact-text h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .text-presentation p {
+    display: none;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .contact-form input {
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  .home-presentation {
+    display: flex;
+    flex: wrap;
+    margin: 20px;
+  }
+
+  .cards-presentation, .contact-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .cards-presentation h2 {
+    font-size: 50px;
+    justify-content: none;
+  }
+
+  .display-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-text h1 {
+    font-size: 50px;
+  }
+
+  .text-presentation h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .text-presentation h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .text-pres-active {
+    display: none;
+  }
+  
+  .contact-text h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .text-presentation p {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .contact-form input {
+    width: 250px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .home-presentation {
+    display: flex;
+    flex: wrap;
+    margin: 20px;
+  }
+
+  .cards-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .contact-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  .is-img-active {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-active {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    
+  }
+
+  .cards-presentation h2 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .display-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-text h1 {
+    font-size: 50px;
+  }
+
+  .text-presentation h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .text-presentation h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .text-pres-active {
+    display: none;
+  }
+  
+  .contact-text h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .text-presentation p {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    margin: 10px;
+  }
+
+  .contact-form input {
+    width: 350px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  .home-presentation {
+    display: flex;
+    flex: wrap;
+    margin: 20px;
+  }
+
+  .cards-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .cards-presentation h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  .text-presentation {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 500px);
+    margin-right: 20px;
+  }
+
+  .is-img-active {
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+
+  .img-here {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+  }
+
+  .cards-presentation h2 {
+    font-size: 50px;
+    justify-content: none;
+  }
+
+  .display-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-text h1 {
+    font-size: 50px;
+  }
+
+  .text-presentation h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .text-presentation h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .text-pres-active {
+    display: none;
+  }
+  
+  .contact-text h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .text-presentation p {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    margin: 10px;
+  }
+
+  .contact-form input {
+    width: 350px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .text-presentation {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 600px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .img-here {
+    width: 500px;
+    height: 500px;
+    background-color: violet;
+  }
+
+}
