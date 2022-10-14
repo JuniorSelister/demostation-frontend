@@ -1,15 +1,15 @@
 import React from "react";
+import Skeleton from "./Skeleton";
 import './style.css';
-import Skeleton from '../components/Skeleton';
 
 export default () => {
     return (
         <div className="cards-presentation">
-            <h2>Technology</h2>
+            <h2>UI/UX</h2>
             <div className="display-cards">
-                <Skeleton />
-                <Skeleton />
-                <Skeleton />
+                <Skeleton />           
+                <Skeleton />           
+                <Skeleton />           
             </div>
         </div>
     );

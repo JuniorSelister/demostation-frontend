@@ -7,17 +7,22 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-header {
+nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-header li {
+nav li {
   display: inline;
   margin-left: 40px;
 }
 
-header li a:hover {
+nav ul {
+  margin-left: 500px;
+}
+
+nav li a:hover {
   color: black;
 }
 
@@ -27,7 +32,7 @@ ul {
     padding: 0;
 }
 
-header li a {
+nav li a {
     color: white;
     text-decoration: none;
 }
@@ -43,7 +48,10 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-
+  nav ul {
+    margin-left: 10px;
+  }
+  
   .home-presentation, .cards-presentation, .contact-presentation {
     display: flex;
     flex-wrap: wrap;
@@ -111,6 +119,10 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
+
+  nav ul {
+    margin-left: 100px;
+  }
 
   .home-presentation {
     display: flex;
@@ -185,6 +197,10 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  
+  nav ul {
+    margin-left: 200px;
+  }
 
   .home-presentation {
     display: flex;
@@ -276,6 +292,10 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+
+  nav ul {
+    margin-left: 200px;
+  }
 
   .home-presentation {
     display: flex;
@@ -377,8 +397,8 @@ footer {
 
 }
 
-@media only screen and (min-width: 1200px) {
-
+@media only screen and (min-width: 1200px) { 
+  
   .text-presentation {
     display: flex;
     flex-direction: column;

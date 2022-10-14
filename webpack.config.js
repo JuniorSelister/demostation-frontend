@@ -1,40 +1,30 @@
-const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+// const webpack = require('webpack')
+// const ExtractTextPlugin = require('extract-text-webpack-plugin')
+
+// module.exports = {
+//   entry: './src/index.js',
+//   output: {
+//     path: __dirname + '/public',
+//     filename: './app.js'
+//   },
+//   devServer: {
+//     port: 8080,
+//     contentBase: './public',
+//   },
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    index: path.resolve(__dirname, './src/index.js')
+  },
   output: {
-    path: __dirname + '/public',
-    filename: './app.js'
-  },
-  devServer: {
-    port: 8080,
-    contentBase: './public',
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx'],
-    alias: {
-      modules: __dirname + '/node_modules'
-    }
+    path: path.resolve(__dirname, './public'),
+    filename: '[name].bundle.js'
   },
   plugins: [
-    new ExtractTextPlugin('./views/style.css')
-  ],
-  module: {
-    loaders: [{
-      test: /.js[x]?$/,
-      loader: 'babel-loader',
-      exclude: /node_modules/,
-      query: {
-        presets: ['es2015', 'react'],
-        plugins: ['transform-object-rest-spread']
-      }
-    }, {
-      test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
-    }, {
-      test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
-      loader: 'file'
-    }]
-  }
-}
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './public/index.html')
+    })
+  ]
+};
