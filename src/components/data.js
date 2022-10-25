@@ -2,7 +2,7 @@
 
 import { pager_icon, lightbulb_icon, react_icon } from "../assets/icons"
 
-const technology = [
+export const technology = [
   {
     id: 1,
     img: pager_icon,
@@ -23,25 +23,23 @@ const technology = [
   }
 ]
 
-const uiux = [
+export const uiux = [
   {
     id: 1,
-    img: "uiux_uiux",
+    img: pager_icon,
     title: "UI/UX",
     text: "A lot of ideas comes when find a challenge, DemoStation is ready to help you bring your idea inside it out, we will draw your ideia and bring for more respective devices that you can image."
   },
   {
     id: 2,
-    img: "uiux_responsible",
+    img: lightbulb_icon,
     title: "Responsible",
     text: "We draw your sketches and bring visibility to your project, the main goal it is fit your application in the maximum screen as possible, givin' to you devices perspective to where you want to achieve your business."
   },
   {
     id: 3,
-    img: "uiux_brand",
+    img: react_icon,
     title: "Brand",
     text: "Sometimes the challenge is not define your purpose, your business but the brand that you want to expose to your clients. DemoStation is able to help you to bring your brand inside out and help you out to speed up your business."
   }
 ]
-
-export default technology;

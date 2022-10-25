@@ -1,5 +1,6 @@
 import React from "react";
-import Skeleton from "./Skeleton";
+import UICard from "./UICard";
+
 import './style.css';
 
 export default () => {
@@ -7,9 +8,7 @@ export default () => {
         <div className="cards-presentation">
             <h2>UI/UX</h2>
             <div className="display-cards">
-                <Skeleton />           
-                <Skeleton />           
-                <Skeleton />           
+                <UICard />
             </div>
         </div>
     );
