@@ -1,15 +1,13 @@
 import React from "react";
 import './style.css';
-import Skeleton from './Skeleton';
+import TechCard from './TechCard'
 
 export default () => {
     return (
         <div className="cards-presentation">
             <h2>Technology</h2>
             <div className="display-cards">
-                <Skeleton />
-                <Skeleton />
-                <Skeleton />
+                <TechCard />
             </div>
         </div>
     );
