@@ -1,19 +1,21 @@
 import React from 'react';
 
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Technology from './components/Technology';
-import UI from './components/UI';
+import Design from './components/Design';
+import Playground from './components/Playground';
 import Footer from './components/Footer';
 
 export default () => {
   return (
     <div className='container'>
-      <Navbar />
+      <Header />
       <Home />
       <Technology />
-      <UI />
+      <Design />
+      <Playground />
       <Contact />
       <Footer />
     </div>
